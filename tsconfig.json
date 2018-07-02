@@ -15,6 +15,12 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "baseUrl": "src",
+    "paths" : {
+        "@components/*": ["app/components/*"],
+        "@api/*": ["app/api_client/*"],
+        "@const": ["app/../environments/globals"],
+    }
   }
 }
