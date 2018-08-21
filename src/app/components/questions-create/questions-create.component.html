@@ -1,0 +1,30 @@
+<h1>{{'QUESTION_CREATE_TITLE' | translate}}</h1>
+
+<div class="input-group input-group-lg">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">{{'QUESTION_QUESTION' | translate}}</span>
+    </div>
+    <input [(ngModel)]="questionTitle" type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+</div>
+
+<div class="row">
+    <div class="col-lg-3">
+        <button type="button" class="btn btn-primary" (click)="addAnswer()">{{'QUESTION_ANSWER_ADD' | translate}}</button>
+    </div>
+</div>
+<!--
+<div class="input-group mb-3" *ngFor="let answers of question.answers">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input type="checkbox" aria-label="Checkbox for following text input">
+        </div>
+    </div>
+    <input type="text" class="form-control" aria-label="Text input with checkbox">
+</div>
+-->
+
+<div class="row">
+    <div class="col-lg-3 offset-lg-9">
+            <button type="button" class="btn btn-success btn-block">{{'QUESTION_SAVE' | translate}}</button>
+    </div>
+</div>

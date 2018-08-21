@@ -1,0 +1,18 @@
+<nav>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" routerLink="home">{{'MENU_HOME' | translate}}</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="listquestions">{{'MENU_QUESTION' | translate}}</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="createquestions">{{'MENU_QUESTION_CREATE' | translate}}</a>
+        </li>
+        <li>
+            <button (click)="changeLanguage('de')">de</button>
+            <button (click)="changeLanguage('en')">en</button>
+        </li>
+    </ul>
+</nav>
+
